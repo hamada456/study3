@@ -4,9 +4,9 @@
 
     $trigger[0].addEventListener("click", (e) => clickHandler(e));
 
-    const clickHandler = (e) => {
-        e.preventDefault();
-        console.log("!!!!");
-    };
+        const clickHandler = (e) => {
+            e.preventDefault();
+            console.log("テスト");
+        };
 
 })();
