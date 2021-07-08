@@ -35,4 +35,9 @@
         tagName:"p"
     });
 
+    const dummyAccordion = new Accordion({
+        hookName:"#aaa",
+        tagName:"p"
+    });
+
 })();
