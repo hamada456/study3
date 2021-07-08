@@ -4,9 +4,11 @@
 
     $trigger[0].addEventListener("click", (e) => clickHandler(e));
 
-        const clickHandler = (e) => {
-            e.preventDefault();
-            console.log("テスト");
-        };
+    const clickHandler = (e) => {
+        e.preventDefault();
+            
+        const $content = $trigger[0].nextElementSibling;
+        
+    };
 
 })();
