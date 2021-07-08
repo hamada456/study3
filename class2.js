@@ -1,5 +1,9 @@
 (() => {
-    const $elm = document.querySelector("#js-accordion");
+
+    class Accordion {
+
+        constructor(){
+            const $elm = document.querySelector("#js-accordion");
     const $trigger = $elm.getElementsByTagName("a");
 
     const triggerLen = $trigger.length;
@@ -8,19 +12,19 @@
         $trigger[index].addEventListener("click",(e) => clickHandler(e));
         index++;
     }
-
-    const clickHandler = (e) => {
-        e.preventDefault();
-
-        const $target = e.currentTarget;
-        const $content = $target.nextElementSibling;
-
-        if($content.style.display === "block"){
-            $content.style.display = "none";
-        } else {
-            $content.style.display = "block";
+}
+        clickHandler = (e) => {
+            e.preventDefault();
+    
+            const $target = e.currentTarget;
+            const $content = $target.nextElementSibling;
+    
+            if($content.style.display === "block"){
+                $content.style.display = "none";
+            } else {
+                $content.style.display = "block";
+            }
         }
-
     }
 
 })();
