@@ -27,4 +27,6 @@
         }
     }
 
+    const fuckingAccordion = new Accordion();
+
 })();
