@@ -9,18 +9,18 @@
         index++;
     }
 
-    $trigger[0].addEventListener("click", (e) => clickHandler(e));
-
     const clickHandler = (e) => {
         e.preventDefault();
-            
-        const $content = $trigger[0].nextElementSibling;
+
+        const $target = e.currentTarget;
+        const $content = $target.nextElementSibling;
+
         if($content.style.display === "block"){
             $content.style.display = "none";
         } else {
             $content.style.display = "block";
         }
 
-    };
+    }
 
 })();
