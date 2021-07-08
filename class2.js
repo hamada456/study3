@@ -2,9 +2,12 @@
 
     class Accordion {
 
-        constructor(){
-            const $elm = document.querySelector("#js-accordion");
-    const $trigger = $elm.getElementsByTagName("a");
+        constructor(obj){
+
+            console.log("obj",obj.hookName);
+
+            const $elm = document.querySelector(obj.hookName);
+    const $trigger = $elm.getElementsByTagName(obj.tagName);
 
     const triggerLen = $trigger.length;
     let index = 0;
@@ -27,6 +30,9 @@
         }
     }
 
-    const fuckingAccordion = new Accordion();
+    const fuckingAccordion = new Accordion({
+        hookName:"#js-faq",
+        tagName:"p"
+    });
 
 })();
