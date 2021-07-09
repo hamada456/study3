@@ -1,6 +1,6 @@
 (() => {
 
-    class Accordion {
+     export class Accordion {
 
         constructor(obj){
 
